@@ -68,7 +68,7 @@ header {
   color: var(--link-hover-color);
 }
 
-.topbar .comapny-title {
+.topbar .company-title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -91,4 +91,8 @@ header button {
 header button:hover {
   background-color: var(--bg-color-invert);
   color: var(--text-color-invert);
+}
+
+img {
+  width: 100%;
 }

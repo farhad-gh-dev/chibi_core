@@ -1,0 +1,94 @@
+:root {
+  --bg-color: #ffffff;
+  --bg-color-invert: #121212;
+  --text-color: #111;
+  --text-color-invert: #eee;
+  --primary-color: #1e90ff;
+  --border-color: #111;
+  --link-hover-color: #666;
+}
+
+.dark {
+  --bg-color: #121212;
+  --bg-color-invert: #ffffff;
+  --text-color: #eee;
+  --text-color-invert: #111;
+  --primary-color: #90caf9;
+  --border-color: #eee;
+  --link-hover-color: #999;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.topbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  position: relative;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: var(--link-hover-color);
+}
+
+.topbar .comapny-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+}
+
+header button {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--text-color);
+}
+
+header button:hover {
+  background-color: var(--bg-color-invert);
+  color: var(--text-color-invert);
+}

@@ -93,6 +93,7 @@ img {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .header-content img {
@@ -174,7 +175,6 @@ img {
   display: grid;
   gap: 80px;
   margin-bottom: 100px;
-  margin-top: 100px;
 }
 
 .about-us-text-block {
@@ -189,7 +189,7 @@ img {
   grid-area: 1 / 1 / 2 / 2;
   font-size: 36px;
   color: var(--text-color);
-  font-weight: 400;
+  font-weight: 350;
   letter-spacing: 1px;
   margin-top: 10px;
 }
@@ -228,6 +228,78 @@ img {
 .stat-label {
   font-size: 24px;
   color: #777;
+}
+
+/* What we do section */
+
+#what_we_do {
+  display: block;
+  margin-bottom: 100px;
+}
+
+#what_we_do h2 {
+  font-size: 60px;
+  color: var(--text-color);
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+#what_we_do .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards-container .wwd-card {
+  display: block;
+  flex: 1 1 500px;
+}
+
+.wwd-card img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 530px;
+  margin-bottom: 30px;
+}
+
+.wwd-card .subject {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.wwd-card .title {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-weight: 350;
+  color: var(--text-color);
+}
+
+.wwd-card .description {
+  width: 500px;
+  font-size: 20px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.wwd-card .learn-more-link {
+  font-size: 20px;
+  color: #555;
+  text-decoration: underline;
+  font-weight: 350;
+}
+
+.wwd-card .learn-more-link:hover {
+  color: #111;
 }
 
 /* global-classes */

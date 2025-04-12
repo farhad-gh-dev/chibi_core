@@ -323,7 +323,7 @@ img {
 
 footer {
   background: #f7f7f7;
-  padding: 40px 0 0 0;
+  padding: 40px 0 32px 0;
 }
 
 .footer-columns-container {
@@ -407,7 +407,7 @@ footer .copyright-container p {
   font-size: var(--font-size-sm);
   color: var(--text-color);
   font-weight: 400;
-  margin: 32px 0;
+  margin: 32px 0 0 0;
 }
 
 footer .copyright-container a {

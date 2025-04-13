@@ -19,178 +19,222 @@
   </head>
   <body class="">
     <div class="container">
-      <header>
-        <div class="topbar">
-          <nav class="navbar" aria-label="Main navigation">
-            <ul>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+      <header class="header">
+        <div class="header__topbar">
+          <nav class="header__navbar" aria-label="Main navigation">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Blog</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Contact</a>
+              </li>
             </ul>
           </nav>
-          <span class="company-title">Chibi Core Studio</span>
-          <button class="discover-btn">Discover</button>
+          <span class="header__company-title">Chibi Core Studio</span>
+          <button class="button button--discover">Discover</button>
         </div>
-        <div class="header-content">
-          <img src="./assets/header_poster1.jpeg" alt="jjk chibi poster" />
-          <div class="overlay">
-            <div class="header-text-block">
-              <h1>Bringing Your Chibi Dreams to Life.</h1>
-              <p>
+        <div class="header__content">
+          <img
+            src="./assets/header_poster1.jpeg"
+            alt="jjk chibi poster"
+            class="header__image"
+          />
+          <div class="header__overlay">
+            <div class="header__text-block">
+              <h1 class="header__title">Bringing Your Chibi Dreams to Life.</h1>
+              <p class="header__description">
                 At Chibi Core Studio, we bring your stories, characters, and
                 <b>ideas</b> to life with adorable, high-quality chibi art
                 <b>tailored</b> to your style.
               </p>
             </div>
-            <div class="cta">
-              <div class="cta-action-container">
-                <button class="discover-btn">Discover</button>
-                <p>
-                  Ready to see <b>your vision</b> in chibi? Let’s make something
+            <div class="header__cta">
+              <div class="header__cta-container">
+                <button class="button button--discover button--light">
+                  Discover
+                </button>
+                <p class="header__cta-text">
+                  Ready to see <b>your vision</b> in chibi? Let's make something
                   cute together!
                 </p>
               </div>
-              <a href="#" class="learn-more-link">Learn More</a>
+              <a href="#" class="link link--learn-more">Learn More</a>
             </div>
           </div>
         </div>
       </header>
-      <main>
-        <div id="about_us">
-          <div class="about-us-text-block">
-            <h2>[ About us ]</h2>
-            <p>
+      <main class="main">
+        <section id="about_us" class="section section--about">
+          <div class="about__text-block">
+            <h2 class="about__title">[ About us ]</h2>
+            <p class="about__description">
               Chibi Core Studio is a small art studio with a big passion for
               bringing characters to life in chibi form. We specialize in
               creating custom, high-quality illustrations that are full of
               personality, charm, and detail.
             </p>
           </div>
-          <div class="about-us-stats">
-            <div class="stat">
-              <span class="stat-number">25+</span>
-              <span class="stat-label">Locations Traveled</span>
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-card__number">25+</span>
+              <span class="stat-card__label">Locations Traveled</span>
             </div>
-            <div class="stat">
-              <span class="stat-number">50+</span>
-              <span class="stat-label">Client Testimonials</span>
+            <div class="stat-card">
+              <span class="stat-card__number">50+</span>
+              <span class="stat-card__label">Client Testimonials</span>
             </div>
-            <div class="stat">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Project Success</span>
+            <div class="stat-card">
+              <span class="stat-card__number">100%</span>
+              <span class="stat-card__label">Project Success</span>
             </div>
           </div>
-        </div>
-        <div id="what_we_do">
-          <h2>What we do</h2>
-          <div class="cards-container">
+        </section>
+        <section id="what_we_do" class="section section--services">
+          <h2 class="section__title">What we do</h2>
+          <div class="card-grid">
             <div class="content-card">
-              <img src="./assets/Custom_Art1.jpg" alt="Naruto chibi art" />
-              <span class="subject">Custom Art</span>
-              <h3 class="title">Personalized Chibi Illustrations</h3>
-              <p class="description">
+              <img
+                src="./assets/Custom_Art1.jpg"
+                alt="Naruto chibi art"
+                class="content-card__image"
+              />
+              <span class="content-card__subject">Custom Art</span>
+              <h3 class="content-card__title">
+                Personalized Chibi Illustrations
+              </h3>
+              <p class="content-card__description">
                 From original characters to your favorite fandoms, we create
                 one-of-a-kind chibi art tailored just for you.
               </p>
-              <a class="learn-more-link" href="#">Learn More</a>
+              <a class="link link--learn-more" href="#">Learn More</a>
             </div>
             <div class="content-card">
               <img
                 src="./assets/Creator_Packs1.jpg"
                 alt="chibi naruto characters"
+                class="content-card__image"
               />
-              <span class="subject">Creator Packs</span>
-              <h3 class="title">Chibi Assets for Brands & Streams</h3>
-              <p class="description">
+              <span class="content-card__subject">Creator Packs</span>
+              <h3 class="content-card__title">
+                Chibi Assets for Brands & Streams
+              </h3>
+              <p class="content-card__description">
                 We offer custom packages including avatars, emotes, and
                 more—designed to match your style.
               </p>
-              <a class="learn-more-link" href="#">Learn More</a>
+              <a class="link link--learn-more" href="#">Learn More</a>
             </div>
           </div>
-        </div>
-        <div id="our_work_in_action">
-          <h2>Our Work in Action</h2>
-          <div class="cards-container">
+        </section>
+        <section id="our_work_in_action" class="section section--portfolio">
+          <h2 class="section__title">Our Work in Action</h2>
+          <div class="card-grid card-grid--triple">
             <div class="content-card">
               <img
                 src="./assets/demon_slayer2.jpg"
                 alt="demon slayer chibi art"
+                class="content-card__image"
               />
-              <span class="subject">Blade & Butterflies</span>
-              <h3 class="title">Demon Slayer</h3>
-              <p class="description">
+              <span class="content-card__subject">Blade & Butterflies</span>
+              <h3 class="content-card__title">Demon Slayer</h3>
+              <p class="content-card__description">
                 At Chibi Core Studio, we bring elegance and edge together in
                 this style inspired by fierce warriors and delicate beauty.
                 Perfect for those who love grace with a deadly twist.
               </p>
-              <a class="learn-more-link" href="#">Explore This Style</a>
+              <a class="link link--learn-more" href="#">Explore This Style</a>
             </div>
             <div class="content-card">
               <img
                 src="./assets/cyberpunk_edgerunners1.jpg"
                 alt="cyberpunk edgerunners chibi art"
+                class="content-card__image"
               />
-              <span class="subject">Cyberpunk Aesthetic</span>
-              <h3 class="title">Cyberpunk Edgerunners</h3>
-              <p class="description">
+              <span class="content-card__subject">Cyberpunk Aesthetic</span>
+              <h3 class="content-card__title">Cyberpunk Edgerunners</h3>
+              <p class="content-card__description">
                 Bold, electric, and full of attitude — our Chibi style turns
                 futuristic rebellion into vibrant visual storytelling. For
                 dreamers with a tech-charged heart.
               </p>
-              <a class="learn-more-link" href="#">Explore This Style</a>
+              <a class="link link--learn-more" href="#">Explore This Style</a>
             </div>
             <div class="content-card">
-              <img src="./assets/jujutsu_kaisen3.jpg" alt="" />
-              <span class="subject">Adorable Energy</span>
-              <h3 class="title">Jujutsu Kaisen</h3>
-              <p class="description">
+              <img
+                src="./assets/jujutsu_kaisen3.jpg"
+                alt="jujutsu kaisen chibi art"
+                class="content-card__image"
+              />
+              <span class="content-card__subject">Adorable Energy</span>
+              <h3 class="content-card__title">Jujutsu Kaisen</h3>
+              <p class="content-card__description">
                 Bright smiles, soft features, and pure chibi charm. we bring out
                 the playful, heart-melting side of your favorite characters —
                 cuteness turned all the way up.
               </p>
-              <a class="learn-more-link" href="#">Explore This Style</a>
+              <a class="link link--learn-more" href="#">Explore This Style</a>
             </div>
           </div>
-        </div>
-        <img src="./assets/header_poster2.jpg" alt="jjk poster" />
+        </section>
+        <img
+          src="./assets/header_poster2.jpg"
+          alt="jjk poster"
+          class="main__footer-image"
+        />
       </main>
-      <footer>
-        <div class="footer-columns-container">
-          <div class="footer-column quick-links">
-            <h4>Quick Links</h4>
-            <ul class="footer-links-list">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Pricing</a></li>
+      <footer class="footer">
+        <div class="footer__columns">
+          <div class="footer__column footer__column--quick-links">
+            <h4 class="footer__heading">Quick Links</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">Blog</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">Services</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">Pricing</a>
+              </li>
             </ul>
           </div>
-          <div class="footer-column">
-            <img src="./assets/logo.png" alt="Chibi Core Studio Logo" />
-            <span class="site-name">Chibi Core Studio</span>
+          <div class="footer__column footer__column--brand">
+            <img
+              src="./assets/logo.png"
+              alt="Chibi Core Studio Logo"
+              class="footer__logo"
+            />
+            <span class="footer__site-name">Chibi Core Studio</span>
           </div>
-          <div class="footer-column contact-us">
-            <h4>Contact Us</h4>
-            <p class="contact-us-email">Email: info@chibicorestudio.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <div class="social-media-links">
-              <a href="#" target="_blank">Instagram</a>
+          <div class="footer__column footer__column--contact">
+            <h4 class="footer__heading">Contact Us</h4>
+            <p class="footer__contact-text">Email: info@chibicorestudio.com</p>
+            <p class="footer__contact-text">Phone: (123) 456-7890</p>
+            <div class="footer__social-links">
+              <a href="#" target="_blank" class="footer__social-link"
+                >Instagram</a
+              >
               |
-              <a href="#" target="_blank">X</a>
+              <a href="#" target="_blank" class="footer__social-link">X</a>
               |
-              <a href="#" target="_blank">LinkedIn</a>
+              <a href="#" target="_blank" class="footer__social-link"
+                >LinkedIn</a
+              >
             </div>
           </div>
         </div>
-        <div
-          class="copyright-container"
-          style="text-align: center; border-top: 1px solid #ddd"
-        >
-          <p>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
             © 2025 Chibi Core Studio. All Rights Reserved. |
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Terms of Service</a>
+            <a href="#" class="footer__link">Privacy Policy</a> |
+            <a href="#" class="footer__link">Terms of Service</a>
           </p>
         </div>
       </footer>

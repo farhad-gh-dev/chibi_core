@@ -236,6 +236,8 @@ header {
 
 .cta .learn-more-link {
   align-self: flex-end;
+  font-size: var(--font-size-md);
+  font-weight: 400;
 }
 
 .cta .learn-more-link:hover {

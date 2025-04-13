@@ -3,30 +3,50 @@
 }
 
 :root {
-  --bg-color: #ffffff;
-  --bg-color-invert: #121212;
-  --text-color: #111;
-  --text-color-invert: #eee;
-  --primary-color: #1e90ff;
-  --border-color: #111;
-  --link-hover-color: #666;
+  --color-white: #ffffff;
+  --color-off-white: #f7f7f7;
+  --color-black: #121212;
+  --color-gray-100: #eee;
+  --color-gray-200: #ddd;
+  --color-gray-300: #ccc;
+  --color-gray-400: #999;
+  --color-gray-500: #777;
+  --color-gray-600: #666;
+  --color-gray-700: #555;
+  --color-gray-800: #111;
 
-  --font-size-xxl: 3rem; /* Hero heading */
-  --font-size-xl: 2rem; /* Section headings */
-  --font-size-lg: 1.5rem; /* Subheadings */
-  --font-size-md: 1.125rem; /* Body text */
-  --font-size-sm: 1rem; /* Minor elements */
-  --font-size-xs: 0.875rem; /* Captions, disclaimers, very small text */
+  --bg-color: var(--color-white);
+  --bg-color-invert: var(--color-black);
+  --text-color: var(--color-gray-800);
+  --text-color-invert: var(--color-gray-100);
+  --text-color-stats-label: var(--color-gray-500);
+  --text-color-card-label: var(--color-gray-600);
+  --text-color-card-description: var(--color-gray-700);
+  --border-color: var(--color-gray-800);
+  --link-color: var(--color-gray-700);
+  --link-hover-color: var(--color-gray-800);
+  --footer-bg-color: var(--color-off-white);
+
+  --font-size-xxl: 3rem;
+  --font-size-xl: 2rem;
+  --font-size-lg: 1.5rem;
+  --font-size-md: 1.125rem;
+  --font-size-sm: 1rem;
+  --font-size-xs: 0.875rem;
 }
 
 .dark {
-  --bg-color: #121212;
-  --bg-color-invert: #ffffff;
-  --text-color: #eee;
-  --text-color-invert: #111;
-  --primary-color: #90caf9;
-  --border-color: #eee;
-  --link-hover-color: #999;
+  --bg-color: var(--color-black);
+  --bg-color-invert: var(--color-white);
+  --text-color: var(--color-gray-100);
+  --text-color-invert: var(--color-gray-800);
+  --text-color-stats-label: var(--color-gray-400);
+  --text-color-card-label: var(--color-gray-400);
+  --text-color-card-description: var(--color-gray-300);
+  --border-color: var(--color-gray-100);
+  --link-color: var(--color-gray-300);
+  --link-hover-color: var(--color-gray-100);
+  --footer-bg-color: var(--color-gray-800);
 }
 
 body {
@@ -34,6 +54,11 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .container {
@@ -85,10 +110,6 @@ header {
   font-size: var(--font-size-md);
 }
 
-img {
-  width: 100%;
-}
-
 .header-content {
   position: relative;
   width: 100%;
@@ -100,7 +121,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
   filter: brightness(45%);
 }
 
@@ -108,13 +128,13 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  grid-template-columns: 1fr;
   height: 100%;
   width: 100%;
   padding: 32px 24px;
-  color: white;
+  color: var(--color-white);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
 }
 
 .header-text-block {
@@ -132,7 +152,7 @@ img {
 .header-text-block p {
   font-size: var(--font-size-md);
   line-height: 1.5;
-  color: #ccc;
+  color: var(--color-gray-300);
 }
 
 .cta {
@@ -150,23 +170,27 @@ img {
 
 .cta .discover-btn {
   align-self: flex-start;
-  color: #eee;
-  border-color: #eee;
+  color: var(--color-gray-100);
+  border-color: var(--color-gray-100);
 }
 
 .cta .discover-btn:hover {
-  background-color: #fff;
-  color: #111;
+  background-color: var(--color-white);
+  color: var(--color-gray-800);
 }
 
 .cta p {
   font-size: var(--font-size-md);
-  color: #d4d4d4;
+  color: var(--color-gray-200);
   margin: 0;
 }
 
 .cta .learn-more-link {
   align-self: flex-end;
+}
+
+.cta .learn-more-link:hover {
+  opacity: 0.8;
 }
 
 #about_us,
@@ -232,7 +256,7 @@ img {
 
 .stat-label {
   font-size: 24px;
-  color: #777;
+  color: var(--text-color-stats-label);
 }
 
 /* What we do and our work in action section */
@@ -258,8 +282,6 @@ img {
 }
 
 .content-card img {
-  display: block;
-  width: 100%;
   object-fit: cover;
 
   margin-bottom: 30px;
@@ -277,7 +299,7 @@ img {
   display: block;
   width: 100%;
   font-size: 16px;
-  color: #666;
+  color: var(--text-color-card-label);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -293,7 +315,7 @@ img {
 
 .content-card .description {
   font-size: 20px;
-  color: #666;
+  color: var(--text-color-card-description);
   line-height: 1.6;
   margin-bottom: 20px;
   margin-top: 0;
@@ -305,24 +327,19 @@ img {
 
 .content-card .learn-more-link {
   font-size: 20px;
-  color: #555;
+  color: var(--link-color);
   text-decoration: underline;
   font-weight: 350;
 }
 
 .content-card .learn-more-link:hover {
-  color: #111;
+  color: var(--link-hover-color);
 }
 
 /* footer */
 
-.footer-img-conotainer img {
-  display: block;
-  width: 100%;
-}
-
 footer {
-  background: #f7f7f7;
+  background: var(--footer-bg-color);
   padding: 40px 0 32px 0;
 }
 
@@ -371,13 +388,13 @@ footer {
 
 .footer-column .footer-links-list a {
   font-size: var(--font-size-md);
-  color: #555;
+  color: var(--link-color);
   text-decoration: underline;
   font-weight: 400;
 }
 
 .footer-column .footer-links-list a:hover {
-  color: #111;
+  color: var(--link-hover-color);
 }
 
 .footer-column.contact-us p {
@@ -398,9 +415,13 @@ footer {
 
 .footer-column.contact-us .social-media-links a {
   font-size: var(--font-size-sm);
-  color: #555;
+  color: var(--link-color);
   text-decoration: underline;
   font-weight: 500;
+}
+
+.footer-column.contact-us .social-media-links a:hover {
+  color: var(--link-hover-color);
 }
 
 footer .copyright-container p {
@@ -412,12 +433,12 @@ footer .copyright-container p {
 
 footer .copyright-container a {
   text-decoration: underline;
-  color: #555;
+  color: var(--link-color);
   font-weight: 500;
 }
 
 footer .copyright-container a:hover {
-  color: #111;
+  color: var(--link-hover-color);
 }
 
 /* global-classes */
@@ -441,14 +462,10 @@ footer .copyright-container a:hover {
 .learn-more-link {
   background: none;
   border: none;
-  color: #ddd;
+  color: var(--color-gray-200);
   font-size: var(--font-size-sm);
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s;
   font-weight: 300;
-}
-
-.learn-more-link:hover {
-  opacity: 0.8;
 }

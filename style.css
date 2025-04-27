@@ -20,6 +20,7 @@
   --bg-color: var(--color-white);
   --bg-color-invert: var(--color-black);
   --text-color: var(--color-gray-800);
+  --text-color-navbar-link: var(--color-gray-600);
   --text-color-invert: var(--color-gray-100);
   --text-color-stats-label: var(--color-gray-500);
   --text-color-card-label: var(--color-gray-600);
@@ -56,6 +57,7 @@
   --bg-color: var(--color-black);
   --bg-color-invert: var(--color-white);
   --text-color: var(--color-gray-100);
+  --text-color-navbar-link: var(--color-gray-300);
   --text-color-invert: var(--color-gray-800);
   --text-color-stats-label: var(--color-gray-400);
   --text-color-card-label: var(--color-gray-400);
@@ -158,7 +160,7 @@ img {
 
 .header__nav-link {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-color-navbar-link);
   font-weight: 400;
   font-size: var(--font-size-sm);
   transition: color 0.2s;
@@ -166,13 +168,14 @@ img {
 
 .header__nav-link:hover {
   text-decoration: underline;
+  color: var(--text-color);
 }
 
 .header__company-title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-weight: 500;
+  font-weight: 450;
   font-size: var(--font-size-md);
 }
 
@@ -468,4 +471,58 @@ img {
 
 .footer__copyright .footer__link {
   font-weight: 500;
+}
+
+/* Third-Party Component Styles */
+
+.theme-toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--bg-color);
+  border-radius: 100%;
+  border: 2px solid var(--bg-color-invert);
+  box-shadow: 3px 3px var(--bg-color-invert);
+}
+
+.theme-toggle__input {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+}
+
+.theme-toggle__icon {
+  position: absolute;
+  top: calc(50% -10px);
+  left: calc(50% -10px);
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle__icon--moon {
+  fill: var(--bg-color-invert);
+}
+
+.theme-toggle__icon--sun {
+  stroke: var(--bg-color-invert);
+  display: none;
+}
+
+.theme-toggle__input:checked ~ .theme-toggle__icon--sun {
+  display: block;
+}
+
+.theme-toggle__input:checked ~ .theme-toggle__icon--moon {
+  display: none;
+}
+
+.theme-toggle:active {
+  box-shadow: 0px 0px var(--bg-color-invert);
+  transform: translate(3px, 3px);
 }

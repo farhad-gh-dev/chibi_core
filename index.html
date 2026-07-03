@@ -82,6 +82,12 @@
               ></path>
             </svg>
           </label>
+          <script>
+            // Sync the toggle with the theme set by the head script before
+            // first paint (checked = light, unchecked = dark)
+            document.querySelector(".theme-toggle__input").checked =
+              !document.documentElement.classList.contains("dark");
+          </script>
         </div>
         <div class="header__content">
           <img
